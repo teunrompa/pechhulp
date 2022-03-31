@@ -19,7 +19,12 @@
             </div>
             <div class="header-nav">
                 <nav>
-                    <a href="" id="pech-melding">Maak Pechmelding</a>
+                    @if(Auth::check())
+                        <a href="/pechmelding" id="pech-melding">Maak Pechmelding</a>
+                    @else
+                        <a href="/login">Login</a>
+                        <a href="/register">Register</a>
+                    @endif
                     <a href="/reviews">Reviews</a>
                 </nav>
             </div>

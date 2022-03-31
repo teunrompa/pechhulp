@@ -25,12 +25,12 @@ Route::get('/', [HomeController::class, "index"])->name("home");
 Route::get('/dashboard', [DashboardController::class, "index"])->name("dashboard");
 
 Route::get('/garages', [GarageController::class, "index"])->name("garages");
-    
+
 Route::get('/reviews', [ReviewController::class, "index"])->name("reviews");
 
-Route::get('/admin', [AdminController::class, "index"])->name("admin")->middleware(["admin"]); 
+Route::get('/admin', [AdminController::class, "index"])->name("admin")->middleware(["admin"]);
 
-Route::get('/pechmelding', [PechMeldingController::class, "index"])->name("pechmelding");
-Route::put('/pechmelding', [PechMeldingController::class, "store"]);
+Route::get('/pechmelding', [PechMeldingController::class, "index"])->name("pechmelding")->middleware(["auth"]);
+Route::put('/pechmelding', [PechMeldingController::class, "store"])->middleware(["auth"]);
 
 require __DIR__.'/auth.php';
