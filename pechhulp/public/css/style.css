@@ -1,0 +1,85 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo > a > img {
+    width: 100%;
+    max-width: 200px;
+}
+
+nav > a{
+    padding: 20px;
+}
+
+#pech-melding{
+    background-color: #ff1f1f;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+
+.hero-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px;
+}
+.contact-types {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.contract-type {
+    font-size: 1.2rem;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.contract-name {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.contract-info {
+    font-size: 1rem;
+    padding: 20px 0 20px 0;
+}
+table {
+    background-color: gray;
+    border-radius: 3px;
+    margin: 30px;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th,
+td {
+    padding: 20px;
+}
